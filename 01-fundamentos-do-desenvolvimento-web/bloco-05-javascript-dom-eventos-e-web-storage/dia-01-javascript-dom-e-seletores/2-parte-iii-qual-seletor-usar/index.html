@@ -1,0 +1,24 @@
+<html>
+  <body>
+    <header>
+      <h2 id="page-title">Título</h2>
+      <p id="paragraph" class="paragraphs">Dê uma cor para este parágrafo!</p>
+      <h4 id="subtitle">Subtítulo</h4>
+      <p id="second-paragraph" class="paragraphs">Segundo parágrafo!</p>
+    </header>
+    <script>
+      document.querySelector("#page-title").innerText = "Les Misérables";
+      // document.getElementById("page-title").innerText = "Les Misérables";
+      document.querySelector("#second-paragraph").innerHTML = "<em>Segundo parágrafo!<em>";
+      // document.getElementById("second-paragraph").innerHTML = "<em>Segundo parágrafo!<em>";
+      document.querySelector("#subtitle").style.fontFamily = "sans-serif";
+      // document.getElementById("subtitle").style.fontFamily = "sans-serif";
+      const paragraph = document.getElementById("paragraph");
+      paragraph.style.color = "red";
+      document.querySelectorAll(".paragraphs")[0].style.color = "green";
+      // document.getElementsByClassName("paragraphs")[0].style.color = "green";
+      document.querySelectorAll("h4")[0].style.color = "blue";
+      // document.getElementsByTagName("h4")[0].style.color = "blue";
+    </script>
+  </body>
+</html>
