@@ -10,30 +10,30 @@
     <section id="quartoEUltimoFilho"></section>
   </section>
   <script>
-    //1
+    //1 Acesse o elemento elementoOndeVoceEsta.
     const elementoOndeVoceEsta = document.getElementById("elementoOndeVoceEsta");
 
-    //2
+    //2 Acesse pai a partir de elementoOndeVoceEsta e adicione uma color a ele.
     const pai = document.getElementById("elementoOndeVoceEsta").parentElement;
     pai.style.color = "blue";
 
-    //3
+    //3 Acesse o primeiroFilhoDoFilho e adicione um texto a ele. Você se lembra dos vídeos da aula anterior, como fazer isso?
     const primeiroFilhoDoFilho = document.getElementById("primeiroFilhoDoFilho");
     primeiroFilhoDoFilho.innerText = "Lorem ipsum";
 
-    //4
+    //4 Acesse o primeiroFilho a partir de pai.
     const primeiroFilho = pai.firstElementChild;
 
-    //5
+    //5 Agora acesse o primeiroFilho a partir de elementoOndeVoceEsta.
     const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling;
 
-    //6
+    //6 Agora acesse o texto Atenção! a partir de elementoOndeVoceEsta.
     const atencao = elementoOndeVoceEsta.nextSibling;
 
-    //7
+    //7 Agora acesse o terceiroFilho a partir de elementoOndeVoceEsta.
     const terceiroFilho = elementoOndeVoceEsta.nextElementSibling;
 
-    //8
+    //8 Agora acesse o terceiroFilho a partir de pai.
     const terceiroFilho2 = pai.lastElementChild.previousElementSibling;
   </script>
 </main>
