@@ -8,7 +8,34 @@ function createStateOptions() {
     states.appendChild(createOptions).value = stateOptions[index];
   }
 }
+function validateData() {
+  let name = document.querySelector('[name=name]');
+  
+  if(name.value.length > 40 || name.value.length === 0) {
+    alert('Nome inválido!')
+  }
+}
+function validateEmail() {
+  let email = document.querySelector('[name=email]');
+  
+  if(email.value.length > 40 || email.value.length === 0) {
+    alert('E-mail inválido!')
+  }
+}
+
+function handleSubmit(event) {
+  event.preventDefault();
+
+  validateData();
+  validateEmail();
+}
 
 window.onload = function () {
   createStateOptions();
+  
+  let button = document.querySelector('.submit-button');
+  button.addEventListener('click', handleSubmit);
+
+  // let clearButton = document.querySelector('.clear-button');
+  // clearButton.addEventListener('click', clearFields)
 }
