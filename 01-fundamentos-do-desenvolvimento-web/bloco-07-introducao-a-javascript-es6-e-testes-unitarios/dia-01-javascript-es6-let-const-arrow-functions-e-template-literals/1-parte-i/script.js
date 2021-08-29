@@ -43,54 +43,54 @@ testingScope(true);
 
 // console.log(oddsAndEvens); // será necessário alterar essa linha 😉
 
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+  const sortOddsAndEvens = () => {
+    oddsAndEvens[0] = 2;
+    oddsAndEvens[1] = 3;
+    oddsAndEvens[2] = 4;
+    oddsAndEvens[3] = 7;
+    oddsAndEvens[4] = 10;
+    oddsAndEvens[5] = 13;
 
-//   const sortOddsAndEvens = () => {
-//     oddsAndEvens[0] = 2;
-//     oddsAndEvens[1] = 3;
-//     oddsAndEvens[2] = 4;
-//     oddsAndEvens[3] = 7;
-//     oddsAndEvens[4] = 10;
-//     oddsAndEvens[5] = 13;
+    return oddsAndEvens;
+  }
 
-//     return oddsAndEvens;
-//   }
+const sortedArray = sortOddsAndEvens();
 
-// const sortedArray = sortOddsAndEvens();
+console.log(`Os números ${sortedArray} se encontram ordenados de forma crescente!`);
 
-// console.log(`Os números ${sortedArray} se encontram ordenados de forma crescente!`);
-
-
-// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-
-// // arr.sort([funcaoDeComparacao])
-
-// function compararNumeros(a, b) {
-//   return a - b;
-// }
-
-// function sortArrayBonus(array) {
-//   return array.sort(compararNumeros);
-// }
-
-// console.log(sortArrayBonus(oddsAndEvens));
-
-
-// const oddsAndEvens = [13, 3, 4, 10, 7, 2];
-
-// const sortArrayBonus = array => {
-//   const sortOddsAndEvens = array.sort((a, b) => a - b);
-//   return sortOddsAndEvens;
-// }
-
-// const sortedArrayBonus = sortArrayBonus(oddsAndEvens);
-// console.log(`Os números ${sortedArrayBonus} se encontram ordenados de forma crescente!`);
 
 const oddsAndEvens = [13, 3, 4, 10, 7, 2];
 
-// const sortArrayBonus = array => array.sort((a, b) => a - b);
+// arr.sort([funcaoDeComparacao])
 
-// console.log(`Os números ${sortArrayBonus(oddsAndEvens)} se encontram ordenados de forma crescente!`);
+function compararNumeros(a, b) {
+  return a - b;
+}
+
+function sortArrayBonus(array) {
+  return array.sort(compararNumeros);
+}
+
+console.log(sortArrayBonus(oddsAndEvens));
+
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+const sortArrayBonus = array => {
+  const sortOddsAndEvens = array.sort((a, b) => a - b);
+  return sortOddsAndEvens;
+}
+
+const sortedArrayBonus = sortArrayBonus(oddsAndEvens);
+console.log(`Os números ${sortedArrayBonus} se encontram ordenados de forma crescente!`);
+
+
+const oddsAndEvens = [13, 3, 4, 10, 7, 2];
+
+const sortArrayBonus = array => array.sort((a, b) => a - b);
+
+console.log(`Os números ${sortArrayBonus(oddsAndEvens)} se encontram ordenados de forma crescente!`);
 
 console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente !`);
